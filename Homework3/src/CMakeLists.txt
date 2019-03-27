@@ -1,0 +1,8 @@
+add_executable(HW3_1 hw3_1.cpp)
+add_executable(HW3_2 hw3_2.cpp)
+target_link_libraries(HW3_1 ${OpenCV_LIBS} -lpthread)
+target_link_libraries(HW3_2 ${OpenCV_LIBS} -lpthread)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
+install(TARGETS HW3_1 RUNTIME DESTINATION bin)
+install(TARGETS HW3_2 RUNTIME DESTINATION bin)
