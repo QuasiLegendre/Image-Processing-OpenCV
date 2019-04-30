@@ -1,0 +1,16 @@
+/home/quasi/BME_Image_Processing/Homework5/build/CMakeFiles/install/strip.dir
+/home/quasi/BME_Image_Processing/Homework5/build/CMakeFiles/install.dir
+/home/quasi/BME_Image_Processing/Homework5/build/CMakeFiles/install/local.dir
+/home/quasi/BME_Image_Processing/Homework5/build/CMakeFiles/list_install_components.dir
+/home/quasi/BME_Image_Processing/Homework5/build/CMakeFiles/edit_cache.dir
+/home/quasi/BME_Image_Processing/Homework5/build/CMakeFiles/rebuild_cache.dir
+/home/quasi/BME_Image_Processing/Homework5/build/bin/CMakeFiles/install/strip.dir
+/home/quasi/BME_Image_Processing/Homework5/build/bin/CMakeFiles/install/local.dir
+/home/quasi/BME_Image_Processing/Homework5/build/bin/CMakeFiles/MultiFWT.dir
+/home/quasi/BME_Image_Processing/Homework5/build/bin/CMakeFiles/FWTIFWT.dir
+/home/quasi/BME_Image_Processing/Homework5/build/bin/CMakeFiles/list_install_components.dir
+/home/quasi/BME_Image_Processing/Homework5/build/bin/CMakeFiles/Edges.dir
+/home/quasi/BME_Image_Processing/Homework5/build/bin/CMakeFiles/edit_cache.dir
+/home/quasi/BME_Image_Processing/Homework5/build/bin/CMakeFiles/install.dir
+/home/quasi/BME_Image_Processing/Homework5/build/bin/CMakeFiles/DeNoise.dir
+/home/quasi/BME_Image_Processing/Homework5/build/bin/CMakeFiles/rebuild_cache.dir
