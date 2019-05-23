@@ -8,10 +8,10 @@ using namespace cv;
 
 Mat FWT(const Mat& Im, const Mat& scaling, const Mat& wavelet, const int order)
 {
-	Mat Image;
-	int Height = getOptimalDFTSize(Im.rows);
-	int Width = getOptimalDFTSize(Im.cols);
-	copyMakeBorder(Im, Image, 0, Height - Im.rows, 0, Width - Im.cols, BORDER_CONSTANT, Scalar::all(float(0.0)));
+	Mat Image = Im;
+	//int Height = getOptimalDFTSize(Im.rows);
+	//int Width = getOptimalDFTSize(Im.cols);
+	//copyMakeBorder(Im, Image, 0, Height - Im.rows, 0, Width - Im.cols, BORDER_CONSTANT, Scalar::all(float(0.0)));
 	Mat dst(Image.rows, Image.cols, CV_32FC1, Scalar(0.0));
 	Mat I({1.0}), Phi, D, H, V;
 	for (int i = 0; i < order; ++i)

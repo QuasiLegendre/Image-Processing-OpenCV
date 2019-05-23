@@ -74,6 +74,15 @@ int main(int argc, char** argv)
 	ZEROS.copyTo(dst(Rect(0, 0, dst.cols/2, dst.rows/2)));
 	ZEROS.release();
 	dst = IFWT(dst, Db4S, Db4W, 1);
+	/*
+	double Max, Min;
+	max(dst, Max);
+	min(dst, Min);
+	cout << Max << '\n' << Min << endl;
+	dst /= Max;
+	dst *= 255
+	*/
+	dst *= 25;
 	imwrite(imagePrefix+"ZeroPhi.jpg", dst);
 
 	dst.release();
