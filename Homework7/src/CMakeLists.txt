@@ -1,0 +1,5 @@
+add_executable(Match Match.cpp)
+target_link_libraries(Match ${OpenCV_LIBS} -lpthread)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
+install(TARGETS Match RUNTIME DESTINATION bin)

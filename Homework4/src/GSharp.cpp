@@ -37,13 +37,14 @@ int main(int argc, char** argv)
 	
 	Mat src = imread(imagePrefix+Name,IMREAD_GRAYSCALE);
 
-	
+
 	if(src.empty())
 	{
 		cout << "Could not open or find the image" << endl;
 		return -1;
 	}
-	float D = 100.0;
+	imwrite(imagePrefix+"Gray.jpg", src);
+	float D = 500.0;
 	function<float(float)> Gf = [D](float dd){return 2.0 - exp(-dd/(2.0*D*D));};
 	int H = getOptimalDFTSize(src.rows);
 	int W = getOptimalDFTSize(src.cols);
@@ -57,8 +58,8 @@ int main(int argc, char** argv)
 	Mat mg, ph;
 	magnitude(db[0], db[1], mg);
 	phase(db[0], db[1], ph);
-	mg.convertTo(mg, CV_8U, 255);
-	ph.convertTo(ph, CV_8U, 255);
+	mg.convertTo(mg, CV_8U, 1);
+	ph.convertTo(ph, CV_8U, 128);
 	imwrite(imagePrefix+"FMag.jpg", mg);
 	imwrite(imagePrefix+"FPha.jpg", ph);
 	//cout << Frq.size() << Frq.channels() << GaussMask.size()<< GaussMask.channels() << endl;
@@ -73,8 +74,8 @@ int main(int argc, char** argv)
 	Mat Mmg, Mph;
 	magnitude(db[0], db[1], Mmg);
 	phase(db[0], db[1], Mph);
-	Mmg.convertTo(Mmg, CV_8U, 255);
-	Mph.convertTo(Mph, CV_8U, 255);
+	Mmg.convertTo(Mmg, CV_8U, 1);
+	Mph.convertTo(Mph, CV_8U, 128);
 	imwrite(imagePrefix+"MFMag.jpg", Mmg);
 	imwrite(imagePrefix+"MFPha.jpg", Mph);
 	Mmg.release();
